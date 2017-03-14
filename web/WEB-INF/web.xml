@@ -11,5 +11,41 @@
         <servlet-name>servlet1</servlet-name>
         <url-pattern>/s1</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>servlet2</servlet-name>
+        <servlet-class>com.number1.Servlet2</servlet-class>
+        <init-param>
+            <param-name>test</param-name>
+            <param-value>123</param-value>
+        </init-param>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Processing</servlet-name>
+        <servlet-class>com.number3.ProcessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Processing</servlet-name>
+        <url-pattern>/processing</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.number3.UploadServlet</servlet-class>
+        <multipart-config>
+            <max-file-size>512000</max-file-size>
+            <max-request-size>4096000</max-request-size>
+        </multipart-config>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
 
+    <listener>
+        <listener-class>com.number2.WebContextListener</listener-class>
+    </listener>
 </web-app>

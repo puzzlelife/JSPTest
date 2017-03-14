@@ -5,6 +5,23 @@
     <title>test</title>
 </head>
 <body>
+    <a href="processing?name=王&age=18">process</a>
+    <hr/>
+    <form method="post" action="processing" >
+        名称：<input name="name"><br><br>
+        年龄：<input name="age"><br>
+        <input type="submit" value="提交">
+        <input type="reset" value="取消">
+    </form>
+    <hr/>
+    <form method="post" action="upload" enctype="multipart/form-data">
+        名称：<input name="name"><br><br>
+        年龄：<input name="age"><br>
+        上传：<input type="file" name="file"><br><br>
+        <input type="submit" value="提交">
+        <input type="reset" value="取消">
+    </form>
+
 
 </body>
 </html>
