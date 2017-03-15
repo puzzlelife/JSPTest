@@ -11,6 +11,7 @@
         <servlet-name>servlet1</servlet-name>
         <url-pattern>/s1</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>servlet2</servlet-name>
         <servlet-class>com.number1.Servlet2</servlet-class>
@@ -24,6 +25,11 @@
         <servlet-name>servlet2</servlet-name>
         <url-pattern>/s2</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>com.number2.WebContextListener</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>Processing</servlet-name>
         <servlet-class>com.number3.ProcessServlet</servlet-class>
@@ -32,6 +38,7 @@
         <servlet-name>Processing</servlet-name>
         <url-pattern>/processing</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>UploadServlet</servlet-name>
         <servlet-class>com.number3.UploadServlet</servlet-class>
@@ -63,7 +70,22 @@
         <url-pattern>/other</url-pattern>
     </servlet-mapping>
 
-    <listener>
-        <listener-class>com.number2.WebContextListener</listener-class>
-    </listener>
+    <servlet>
+        <servlet-name>d1</servlet-name>
+        <servlet-class>com.number4.dispServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>d1</servlet-name>
+        <url-pattern>/d1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>d2</servlet-name>
+        <servlet-class>com.number4.dispServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>d2</servlet-name>
+        <url-pattern>/d2</url-pattern>
+    </servlet-mapping>
+
 </web-app>

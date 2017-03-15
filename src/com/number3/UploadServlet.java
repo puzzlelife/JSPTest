@@ -24,6 +24,7 @@ public class UploadServlet extends HttpServlet {
 //        rep.setContentType("text/html;charset=utf-8");
 //        rep.getWriter().write("name:"+name+"<br>age:"+age+"<br>file:"+file);
         process(req,rep);
+
     }
 
     private void process(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
