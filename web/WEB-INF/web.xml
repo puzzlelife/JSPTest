@@ -106,6 +106,32 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
-        <url-pattern>/control/login</url-pattern>
+        <url-pattern>/relogin</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>creatcook</servlet-name>
+        <servlet-class>com.number6.creatCook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>creatcook</servlet-name>
+        <url-pattern>/cc</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>readcook</servlet-name>
+        <servlet-class>com.number6.readCook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>readcook</servlet-name>
+        <url-pattern>/temp/rc</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>deletecook</servlet-name>
+        <servlet-class>com.number6.deletecook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deletecook</servlet-name>
+        <url-pattern>/dc</url-pattern>
+    </servlet-mapping>
+
 </web-app>

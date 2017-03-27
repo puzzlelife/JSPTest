@@ -20,7 +20,7 @@ public class TestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession httpSession=req.getSession(false);
         if (httpSession==null||httpSession.getAttribute("user")==null){
-            resp.sendRedirect("../pages/login.html");
+            resp.sendRedirect("pages/login.html");
         }
         else {
             resp.setContentType("text/html;charset=utf-8");

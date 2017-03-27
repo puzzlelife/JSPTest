@@ -22,7 +22,7 @@ public class loginServlet extends HttpServlet {
             session.setAttribute("password", pwd);
 
             resp.setContentType("text/html;charset=utf-8");
-            resp.getWriter().write("<strong>欢迎" + name + "访问</strong><br><a href='sessionindex.html'>返回首页</a>");
+            resp.getWriter().write("<strong>欢迎" + name + "访问</strong><br><a href='"+resp.encodeURL("sessionindex.html")+"'>返回首页</a>");
         }else {
             resp.sendRedirect("pages/login.html");
         }
