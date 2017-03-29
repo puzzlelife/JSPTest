@@ -6,7 +6,7 @@
     <welcome-file-list>
         <welcome-file>sessionindex.html</welcome-file>
     </welcome-file-list>
-    
+
     <servlet>
         <servlet-name>servlet1</servlet-name>
         <servlet-class>com.number1.Servlet1</servlet-class>
@@ -133,5 +133,39 @@
         <servlet-name>deletecook</servlet-name>
         <url-pattern>/dc</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>login2</servlet-name>
+        <servlet-class>com.number7.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login2</servlet-name>
+        <url-pattern>/login2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>test2</servlet-name>
+        <servlet-class>com.number7.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test2</servlet-name>
+        <url-pattern>/control/test</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>loginfilter</filter-name>
+        <filter-class>com.number7.loginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginfilter</filter-name>
+        <url-pattern>/control/test</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>fontfilter</filter-name>
+        <filter-class>com.number7.fontfilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>fontfilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 </web-app>
